@@ -1,0 +1,21 @@
+body {
+    background-color: #936;
+}
+
+#game {
+    font-family: Avenir;
+}
+
+h1 {
+    text-align:center;
+    border-bottom-style: dotted;
+    border-width:3px;
+}
+
+h3 {
+    text-align:center;
+}
+
+p {
+    text-align:center;
+}

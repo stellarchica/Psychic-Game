@@ -7,22 +7,11 @@ var guessesLeft = 9;
 var guessesSoFar = [];
 
 var computerChoice = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-
-// function display() {
-//     var winsP = document.getElementById("wins");
-//     var losesP = document.getElementById("loses");
-//     var guessLeft = document.getElementById("guessLeft");
-//     var letterGuessed = document.getElementById("guessed");
-//     winsP.innerHTML = wins;
-//     losesP.innerHTML = loses;
-//     guessLeft.innerHTML = guessesLeft;
-//     letterGuessed.innerHTML = guessedLetters.join(',');
-// }
     
 document.onkeyup = function(event) {
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
     var computerGuess = computerChoice [Math.floor(Math.random()*computerChoice.length -1)];
-    // not displaying
+    // not displaying change in guess number or letter output
     guessesSoFar.push(userGuess);
     
     if (userGuess == computerGuess) {
